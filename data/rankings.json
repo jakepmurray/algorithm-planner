@@ -1,0 +1,243 @@
+{
+  "division": "Mixed",
+  "rankings": [
+    {
+      "rank": 1,
+      "team": "Michigan Hybrid",
+      "record": "27 - 2",
+      "rating": 2250,
+      "region": "Great Lakes",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 2,
+      "team": "New York XIST",
+      "record": "22 - 6",
+      "rating": 2056,
+      "region": "Northeast",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 3,
+      "team": "Fort Collins .shame",
+      "record": "24 - 5",
+      "rating": 2035,
+      "region": "South Central",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 4,
+      "team": "Minneapolis Drag\u2019n Thrust",
+      "record": "20 - 10",
+      "rating": 1945,
+      "region": "North Central",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 5,
+      "team": "Boston Slow",
+      "record": "20 - 11",
+      "rating": 1944,
+      "region": "Northeast",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 6,
+      "team": "Seattle BFG",
+      "record": "15 - 7",
+      "rating": 1939,
+      "region": "Northwest",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 7,
+      "team": "Durham Toro",
+      "record": "23 - 7",
+      "rating": 1912,
+      "region": "Southeast",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 8,
+      "team": "Austin Disco Club",
+      "record": "21 - 10",
+      "rating": 1897,
+      "region": "South Central",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 9,
+      "team": "San Francisco Mischief",
+      "record": "18 - 4",
+      "rating": 1890,
+      "region": "Southwest",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 10,
+      "team": "Lexington (MA) Sprocket",
+      "record": "14 - 16",
+      "rating": 1829,
+      "region": "Northeast",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 11,
+      "team": "Nashville Shine",
+      "record": "12 - 6",
+      "rating": 1762,
+      "region": "Southeast",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 12,
+      "team": "Washington Rally",
+      "record": "15 - 13",
+      "rating": 1759,
+      "region": "Mid-Atlantic",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 13,
+      "team": "Sacramento Tower",
+      "record": "20 - 8",
+      "rating": 1733,
+      "region": "Southwest",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 14,
+      "team": "California Burrito",
+      "record": "24 - 5",
+      "rating": 1717,
+      "region": "Southwest",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 15,
+      "team": "Philadelphia AMP",
+      "record": "15 - 11",
+      "rating": 1689,
+      "region": "Mid-Atlantic",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 16,
+      "team": "Seattle Mixtape",
+      "record": "12 - 16",
+      "rating": 1659,
+      "region": "Northwest",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 17,
+      "team": "Arizona Lawless",
+      "record": "10 - 14",
+      "rating": 1648,
+      "region": "Southwest",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 18,
+      "team": "Toronto UNION",
+      "record": "17 - 6",
+      "rating": 1645,
+      "region": "Great Lakes",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 19,
+      "team": "Huntsville Space Force",
+      "record": "15 - 15",
+      "rating": 1635,
+      "region": "Southeast",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 20,
+      "team": "Mile High Trash",
+      "record": "18 - 12",
+      "rating": 1610,
+      "region": "South Central",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 21,
+      "team": "Boston Wild Card",
+      "record": "16 - 7",
+      "rating": 1573,
+      "region": "Northeast",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 22,
+      "team": "Pittsburgh Port Authority",
+      "record": "19 - 10",
+      "rating": 1568,
+      "region": "Mid-Atlantic",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 23,
+      "team": "San Francisco Polar Bears",
+      "record": "15 - 9",
+      "rating": 1558,
+      "region": "Southwest",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 24,
+      "team": "Oregon Scorch",
+      "record": "19 - 10",
+      "rating": 1553,
+      "region": "Northwest",
+      "trend": 0,
+      "bid_type": null
+    },
+    {
+      "rank": 25,
+      "team": "Baltimore Anthem",
+      "record": "19 - 10",
+      "rating": 1525,
+      "region": "Mid-Atlantic",
+      "trend": 0,
+      "bid_type": null
+    }
+  ],
+  "bid_allocation": {
+    "Great Lakes": 1,
+    "Mid-Atlantic": 2,
+    "Northeast": 3,
+    "Northwest": 1,
+    "North Central": 1,
+    "Southeast": 3,
+    "Southwest": 2,
+    "South Central": 3
+  },
+  "source_last_modified": "October 26, 2025",
+  "source_url": "https://usaultimate.org/club/rankings/",
+  "scraped_at": "2026-07-01T19:20:51.687334+00:00"
+}

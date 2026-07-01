@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Score Simulator &mdash; Port Authority Bid Tracker</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div>
+      <h1>Score Simulator</h1>
+      <div class="subtitle">Project how SFI-East &amp; ESC results move the Mid-Atlantic bid race</div>
+    </div>
+    <div class="freshness" id="freshness">Loading data&hellip;</div>
+  </div>
+</header>
+
+<nav class="tabs">
+  <div class="tabs-inner">
+    <a href="index.html">Dashboard</a>
+    <a href="simulator.html" class="active">Score Simulator</a>
+  </div>
+</nav>
+
+<main>
+
+  <section class="panel">
+    <h2>How this works</h2>
+    <p class="panel-note">
+      USA Ultimate's real Algorithm iterates every team's full schedule to convergence, so it can't be reproduced exactly client-side.
+      This simulator uses the documented per-game formula
+      (<code>game_PR = opponent_rating &plusmn; 400 / max(2/3, 2.5 &times; (losing_score / winning_score)&sup2;)</code>)
+      and blends new games into each team's current rating as a simple weighted average against their games played so far.
+      Treat results as directional estimates, not official projections &mdash; always cross-check against the
+      <a href="https://usaultimate.org/club/rankings/" target="_blank" rel="noopener">official rankings</a> once they update.
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>Port Authority &mdash; Hypothetical Games</h2>
+    <p class="panel-note">Add expected or hypothetical games for SFI-East (Jul 25&ndash;26) and ESC (Aug 22&ndash;23). Pick an opponent from the current national rankings, or type a custom name and rating for an unranked opponent.</p>
+    <div id="pa-games"></div>
+    <button class="secondary" id="add-pa-game">+ Add Game</button>
+  </section>
+
+  <div class="toggle-row">
+    <input type="checkbox" id="beta-toggle">
+    <label for="beta-toggle"><span class="beta-tag">BETA</span>Also simulate hypothetical results for other Mid-Atlantic teams (Rally, AMP, Anthem, etc.) to see full region movement. More speculative &mdash; only as good as the guesses you enter.</label>
+  </div>
+
+  <section class="panel" id="beta-panel" style="display:none;">
+    <h2>Other Mid-Atlantic Teams &mdash; Hypothetical Games <span class="beta-tag">BETA</span></h2>
+    <p class="panel-note">Leave a team with no games added and its rating stays at the last scraped snapshot.</p>
+    <div id="rival-games"></div>
+  </section>
+
+  <div style="margin: 1rem 0;">
+    <button class="primary" id="calculate">Calculate Projection</button>
+    <button class="secondary" id="reset">Reset</button>
+  </div>
+
+  <section class="panel" id="results-panel" style="display:none;">
+    <h2>Projected Standing</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="label">Projected Rating</div>
+        <div class="value" id="res-rating">&ndash;</div>
+        <div class="sub" id="res-rating-delta"></div>
+      </div>
+      <div class="card">
+        <div class="label">Projected Region Position</div>
+        <div class="value" id="res-position">&ndash;</div>
+        <div class="sub" id="res-position-sub"></div>
+      </div>
+    </div>
+
+    <table id="projected-table">
+      <thead>
+        <tr><th>Team</th><th>Rating</th><th>Games Added</th><th>Status</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="result-box" id="baseline-note"></div>
+  </section>
+
+  <datalist id="team-options"></datalist>
+
+</main>
+
+<footer>
+  Simulator model is a simplified approximation of USA Ultimate's published Algorithm methodology
+  (see <a href="https://ultiworld.com/2015/04/01/faq-about-the-usa-ultimate-college-rankings-and-algorithm/" target="_blank" rel="noopener">Ultiworld's FAQ on the ranking algorithm</a>).
+  Not affiliated with or endorsed by USA Ultimate.
+</footer>
+
+<script src="js/simulator.js"></script>
+</body>
+</html>

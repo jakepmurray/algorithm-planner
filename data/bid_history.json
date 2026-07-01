@@ -1,0 +1,31 @@
+{
+  "_readme": "Historical Championship bid allocation for the Mid-Atlantic region, Mixed division. Bid counts are confirmed from USA Ultimate / Ultiworld coverage. 'last_bid_team_rating' fields are left null where we could not verify an exact number from public sources — fill in manually if you find a citable figure, but don't guess.",
+  "region": "Mid-Atlantic",
+  "division": "Mixed",
+  "years": [
+    {
+      "year": 2023,
+      "bids": 2,
+      "qualified_teams": ["Philadelphia AMP", "Washington Rally"],
+      "last_bid_team_rating": null,
+      "notes": "AMP (national #2 at the time) and Rally both held Mid-Atlantic's two bids through the season.",
+      "source": "https://ultiworld.com/2023/09/22/club-regionals-2023-mega-preview-mixed/"
+    },
+    {
+      "year": 2024,
+      "bids": 1,
+      "qualified_teams": ["Philadelphia AMP"],
+      "last_bid_team_rating": null,
+      "notes": "Region dropped to a single bid; AMP was the clear favorite to take it.",
+      "source": "https://ultiworld.com/2024/09/20/club-regionals-2024-mega-preview-mixed-div/"
+    },
+    {
+      "year": 2025,
+      "bids": 2,
+      "qualified_teams": ["Washington Rally", "Philadelphia AMP"],
+      "last_bid_team_rating": null,
+      "notes": "Region was briefly at risk of the 'two bids for three regions' scenario before ESC; Rally and AMP did enough to secure the region's two bids in the final allocation.",
+      "source": "https://ultiworld.com/2025/09/04/usau-releases-final-club-bid-allocation-late-change-shifts-mixed-div-bid/"
+    }
+  ]
+}

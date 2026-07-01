@@ -1,0 +1,36 @@
+{
+  "team_name": "Pittsburgh Port Authority",
+  "region": "Mid-Atlantic",
+  "division": "Mixed",
+  "season": 2026,
+  "season_dates": {
+    "weekly_rankings_start": "2026-07-29",
+    "final_regular_season_rankings": "2026-08-30",
+    "regionals_by": "2026-10-08",
+    "note": "USAU publishes weekly Algorithm rankings starting July 29, 2026. The Final Regular Season Rankings (season end) are what determine regional bid allocation and Regionals seeding."
+  },
+  "remaining_tournaments": [
+    {
+      "name": "Select Flight Invite - East",
+      "abbreviation": "SFI-East",
+      "dates": "2026-07-25 to 2026-07-26",
+      "location": "Sylvania, OH"
+    },
+    {
+      "name": "Elite-Select Challenge",
+      "abbreviation": "ESC",
+      "dates": "2026-08-22 to 2026-08-23",
+      "location": "Indianapolis, IN"
+    }
+  ],
+  "bid_allocation_rules": {
+    "automatic_bids_per_region": 1,
+    "strength_bid_process": "After each region's automatic bid, remaining 'strength bids' are awarded one at a time to whichever region has the next-highest-ranked team not yet allocated a bid, based on the Final Regular Season Rankings.",
+    "total_strength_bids_all_divisions": 16,
+    "source": "https://usaultimate.org/club/2026-club-guidelines/"
+  },
+  "sources": {
+    "rankings_page": "https://usaultimate.org/club/rankings/",
+    "guidelines_page": "https://usaultimate.org/club/2026-club-guidelines/"
+  }
+}

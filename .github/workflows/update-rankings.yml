@@ -1,0 +1,40 @@
+name: Update rankings data
+
+on:
+  schedule:
+    # Mondays at 13:00 UTC (9am Eastern), during the club regular season
+    - cron: "0 13 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scraper/requirements.txt
+
+      - name: Run scraper
+        run: python scraper/scrape_rankings.py
+
+      - name: Commit updated data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- data/rankings.json; then
+            git add data/rankings.json
+            git commit -m "Update rankings data ($(date -u +%Y-%m-%d))"
+            git push
+          else
+            echo "No changes to rankings data."
+          fi

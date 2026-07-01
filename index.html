@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Port Authority Bid Tracker &mdash; Mid-Atlantic Mixed</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div>
+      <h1>Pittsburgh Port Authority &mdash; Nationals Bid Tracker</h1>
+      <div class="subtitle">Mid-Atlantic Region &middot; Mixed Division &middot; 2026 Club Season</div>
+    </div>
+    <div class="freshness" id="freshness">Loading data&hellip;</div>
+  </div>
+</header>
+
+<nav class="tabs">
+  <div class="tabs-inner">
+    <a href="index.html" class="active">Dashboard</a>
+    <a href="simulator.html">Score Simulator</a>
+  </div>
+</nav>
+
+<main>
+
+  <div class="cards" id="summary-cards">
+    <div class="card">
+      <div class="label">Mid-Atlantic Bids</div>
+      <div class="value" id="card-bids">&ndash;</div>
+      <div class="sub">to 2026 Nationals</div>
+    </div>
+    <div class="card">
+      <div class="label">Port Authority Rank</div>
+      <div class="value" id="card-rank">&ndash;</div>
+      <div class="sub" id="card-rank-sub">nationally, Mixed div.</div>
+    </div>
+    <div class="card">
+      <div class="label">Port Authority Rating</div>
+      <div class="value" id="card-rating">&ndash;</div>
+      <div class="sub" id="card-record">record &ndash;</div>
+    </div>
+    <div class="card">
+      <div class="label">Region Position</div>
+      <div class="value" id="card-position">&ndash;</div>
+      <div class="sub" id="card-position-sub">vs. bid line</div>
+    </div>
+  </div>
+
+  <section class="panel">
+    <h2>Mid-Atlantic Standings (Algorithm Rankings)</h2>
+    <p class="panel-note">Ranked among all Mixed division teams nationally, filtered to the Mid-Atlantic region. Green rows are currently inside the region's bid line; this reflects the Algorithm rankings snapshot only &mdash; the actual Nationals berths are decided at the Regional Championship tournament itself.</p>
+    <table id="region-table">
+      <thead>
+        <tr>
+          <th>National Rank</th>
+          <th>Team</th>
+          <th>Record</th>
+          <th>Rating</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2>Championship Bid Allocation &mdash; All Regions</h2>
+    <p class="panel-note">Mixed division. One automatic bid per region, plus strength bids awarded to the highest-ranked remaining team across all regions.</p>
+    <table id="bid-table">
+      <thead>
+        <tr><th>Region</th><th>Bids</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2>Historical Baseline &mdash; Mid-Atlantic Mixed Bids</h2>
+    <p class="panel-note">How many bids the region has earned in recent seasons, for context on what it typically takes to keep or gain a bid. Used as the baseline comparison in the Score Simulator.</p>
+    <table id="history-table">
+      <thead>
+        <tr><th>Year</th><th>Bids</th><th>Qualified Teams</th><th>Notes</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2>What Happens Next</h2>
+    <p class="panel-note" id="next-tournaments">Loading&hellip;</p>
+  </section>
+
+</main>
+
+<footer>
+  Data scraped from <a href="https://usaultimate.org/club/rankings/" target="_blank" rel="noopener">usaultimate.org/club/rankings</a>.
+  Not affiliated with or endorsed by USA Ultimate. Rankings snapshot may lag the official live site by up to a week.
+  See the <a href="https://usaultimate.org/club/2026-club-guidelines/" target="_blank" rel="noopener">2026 Club Guidelines</a> for the official bid allocation rules.
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
